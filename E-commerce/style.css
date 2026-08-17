@@ -1,6 +1,10 @@
 .navbar{
     padding: 0 80px;
+    background-color: black;
    
+}
+.navbar a{
+    color: aliceblue;
 }
 main{
     padding: 0 100px;
