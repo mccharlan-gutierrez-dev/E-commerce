@@ -26,6 +26,9 @@ p{
     justify-content: center;
     gap: 20px;
 }
+.carousel{
+    padding: 30px 0 30px 0;;
+}
 footer{
     background-color: black;
 }
