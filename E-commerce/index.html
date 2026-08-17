@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
+    <!-- box icon -->
+     <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">Under Armour</a>
+    
+  </div>
+  <div class="flex-none">
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+          <span class="badge badge-sm indicator-item">8</span>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="card card-sm dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+        <div class="card-body">
+          <span class="text-lg font-bold">8 Items</span>
+          <span class="text-info">Subtotal: $999</span>
+          <div class="card-actions">
+            <button class="btn btn-primary btn-block">View cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<main>
+
+ <h3>Under Armour</h3>
+
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis eu massa vel convallis. Sed bibendum sem metus, nec elementum metus tincidunt sit amet. Aliquam congue rhoncus egestas. Integer id ligula elit. Vestibulum tincidunt lacus orci, ut sollicitudin ipsum consectetur eget. Sed vel euismod ex, eu iaculis purus. Morbi ultrices nunc felis, sit amet luctus ante fermentum quis. Nunc id pellentesque est, a vulputate nisl. Praesent auctor, libero eget gravida mattis, metus nisl gravida magna, euismod hendrerit massa orci at velit. Curabitur ex erat, placerat eu blandit sed, lacinia et lorem. Maecenas nec enim non eros finibus elementum ut non nibh. Quisque erat sapien, sagittis id accumsan et, sollicitudin vitae urna. Ut at condimentum nunc.
+
+Integer vel fermentum augue. Ut ac ultricies libero. Morbi tempus placerat dui, non congue augue gravida non. Nam ut eros massa. Aliquam mollis augue lorem, eget malesuada libero blandit ut. Duis ut erat purus. Morbi tristique, risus sit amet semper consectetur, tellus enim suscipit mi, non volutpat diam diam commodo sapien. Mauris vitae rhoncus urna.</p>
+
+<div class="product-container">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+     <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="px-4 pt-4">
+          <img
+            src="https://underarmour.com.ph/cdn/shop/files/s7.6007183-001_DEFAULT.webp?v=1781071296&width=460"
+            alt="Shoes"
+            class="rounded-xl w-full h-48 object-cover" />
+        </figure>
+        <div class="card-body p-2 items-center text-center gap-1">
+          <h2 class="card-title">UA Men Halo Tour SI Golf</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div  class="card-actions">
+            <button onclick="decision()" class="btn btn-primary">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="px-4 pt-4">
+          <img
+            src="https://underarmour.com.ph/cdn/shop/files/s7.6006285-001_DEFAULT.webp?v=1781071729&width=460"
+            alt="Shoes"
+            class="rounded-xl w-full h-48 object-cover" />
+        </figure>
+        <div class="card-body p-2 items-center text-center gap-1">
+          <h2 class="card-title">UA Unisex Curry Splash</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+         <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="px-4 pt-4">
+          <img
+            src="https://underarmour.com.ph/cdn/shop/files/s7.6007316-001_DEFAULT.webp?v=1781071109&width=460"
+            alt="Shoes"
+            class="rounded-xl w-full h-48 object-cover" />
+        </figure>
+        <div class="card-body p-2 items-center text-center gap-1">
+          <h2 class="card-title">UA Men Phantom X</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="px-4 pt-4">
+          <img
+            src="https://underarmour.com.ph/cdn/shop/files/s7.6007184-069_DEFAULT.webp?v=1781071488&width=460"
+            alt="Shoes"
+            class="rounded-xl w-full h-48 object-cover" />
+        </figure>
+        <div class="card-body p-2 items-center text-center gap-1">
+          <h2 class="card-title">UA Women Phantom X</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="px-4 pt-4">
+          <img
+            src="https://underarmour.com.ph/cdn/shop/files/s7.6006120-011_DEFAULT.webp?v=1781071942&width=460"
+            alt="Shoes"
+            class="rounded-xl w-full h-48 object-cover" />
+        </figure>
+        <div class="card-body p-2 items-center text-center gap-1">
+          <h2 class="card-title">UA Men Drive Fade 2</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <div class="card bg-base-100 w-full shadow-sm">
+        <figure class="px-4 pt-4">
+          <img
+            src="https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460"
+            alt="Shoes"
+            class="rounded-xl w-full h-48 object-cover" />
+        </figure>
+        <div class="card-body p-2 items-center text-center gap-1">
+          <h2 class="card-title">UA Men Drive Pro Clone</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">
+                Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+</main>
+
+<footer>
+  <div>
+    <p>All rigth reserved || 2026</p>
+  </div>
+</footer>
+    
+</body>
+<script src="javaScript.js"></script>
+</html>
