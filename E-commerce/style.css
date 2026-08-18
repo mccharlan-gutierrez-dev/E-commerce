@@ -78,6 +78,20 @@ footer p{
     object-fit: fill;
 }
 
+.dropdown-content {
+    background-color: #111;
+}
+
+.dropdown-content li a {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content li a:hover {
+    background-color: #333;
+    color: white;
+}
+
 
 
 

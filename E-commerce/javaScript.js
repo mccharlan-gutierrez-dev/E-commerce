@@ -27,10 +27,3 @@ function unhoverMe() {
     }, 500);
 }
 
-// Set timeout with arrow functions
-// setTimeout(() => {
-//     let body = document.querySelector('body');
-//     body.style.transition = "1s";
-//     body.style.background = "black";
-// },2000);
-// runs after 2000 milliseconds(2s)
