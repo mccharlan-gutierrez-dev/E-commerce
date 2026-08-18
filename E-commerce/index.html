@@ -68,14 +68,15 @@
 </div>
 
 <main>
-
-  <div class="hero">
-    <img onmouseover="hover()" 
-         onmouseout="unhoverMe()" 
-         src="https://media.gq.com/photos/69209042ab42e11f1fa2ca4e/16:9/w_2560%2Cc_limit/2193320154" alt="">
-
-    
-  </div>
+<div class="hero">
+  <!-- <video autoplay muted loop>
+    <source src="video.mp4" type="video/mp4">
+</video> -->
+<!-- <img src="https://media.gq.com/photos/69209042ab42e11f1fa2ca4e/16:9/w_2560%2Cc_limit/2193320154" alt=""> -->
+ <video autoplay muted loop>
+    <source src="Curry6.mp4" type="video/mp4">
+</video>
+</div>
 
   <div class="content">
     <h3>Steph Curry’s Under Armour Split Brings an End to the Worst-Ever Hoops Shoe Era</h3>
@@ -90,13 +91,18 @@
 
      <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
-          <img
+        <img 
+            data-original="https://underarmour.com.ph/cdn/shop/files/s7.6007183-001_DEFAULT.webp?v=1781071296&width=460"
+            onmouseover="hover(this, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdJWn_zkfUU7KoascjX-KNcVy7VUnOMvEFbLHbLjw3g&s=10')"
+            onmouseout="unhoverMe(this)"
             src="https://underarmour.com.ph/cdn/shop/files/s7.6007183-001_DEFAULT.webp?v=1781071296&width=460"
-            alt="Shoes"
-            class="rounded-xl w-full h-48 object-cover" />
+            alt="UA Men Halo Tour SI Golf"
+            class="rounded-xl w-full h-64 object-cover"
+        />
+     
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
-          <h2 class="card-title">UA Men Halo Tour SI Golf</h2>
+          <h2 class="card-title" >UA Men Halo Tour SI Golf</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div  class="card-actions">
             <button onclick="decision()" class="btn btn-primary">
@@ -108,16 +114,22 @@
 
         <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
-          <img
+          
+            <img 
+            data-original="https://underarmour.com.ph/cdn/shop/files/s7.6006285-001_DEFAULT.webp?v=1781071729&width=460"
+            onmouseover="hover(this, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXRuyyriFsclZTpccjBN0e0HcT6fSHrTIl32AjEFKRgwAcsokv3nAup006&s=10')"
+            onmouseout="unhoverMe(this)"
             src="https://underarmour.com.ph/cdn/shop/files/s7.6006285-001_DEFAULT.webp?v=1781071729&width=460"
-            alt="Shoes"
-            class="rounded-xl w-full h-48 object-cover" />
+            alt="UA Unisex Curry Splash"
+            class="rounded-xl w-full h-64 object-cover"
+            />
+            
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
           <h2 class="card-title">UA Unisex Curry Splash</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div class="card-actions">
-            <button class="btn btn-primary">
+            <button onclick="decision()" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -127,69 +139,84 @@
          <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
           <img
-            src="https://underarmour.com.ph/cdn/shop/files/s7.6007316-001_DEFAULT.webp?v=1781071109&width=460"
-            alt="Shoes"
-            class="rounded-xl w-full h-48 object-cover" />
+            data-original="https://sportscentral.ph/cdn/shop/files/s7.6007183-600_DEFAULT.webp?v=1782142327&width=1024"
+            onmouseover="hover(this, 'https://sportscentral.ph/cdn/shop/files/s7.6007183-600_TOE.webp?v=1782142327&width=1024')"
+            onmouseout="unhoverMe(this)"
+            src="https://sportscentral.ph/cdn/shop/files/s7.6007183-600_DEFAULT.webp?v=1782142327&width=1024"
+            alt="UA Men Phantom X"
+            class="rounded-xl w-full h-64 object-cover" />
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
           <h2 class="card-title">UA Men Phantom X</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div class="card-actions">
-            <button class="btn btn-primary">
+            <button onclick="decision()" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
         </div>
       </div>
 
+      <!-- card 4 -->
        <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
           <img
+            data-original="https://underarmour.com.ph/cdn/shop/files/s7.6007184-069_DEFAULT.webp?v=1781071488&width=460"
+            onmouseover="hover(this, 'https://sportscentral.ph/cdn/shop/files/s7.6007184-069_TOE.webp?v=1784128039&width=1024')"
+            onmouseout="unhoverMe(this)"
             src="https://underarmour.com.ph/cdn/shop/files/s7.6007184-069_DEFAULT.webp?v=1781071488&width=460"
             alt="Shoes"
-            class="rounded-xl w-full h-48 object-cover" />
+            class="rounded-xl w-full h-64 object-cover" />
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
           <h2 class="card-title">UA Women Phantom X</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div class="card-actions">
-            <button class="btn btn-primary">
+            <button onclick="decision()" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
         </div>
       </div>
 
+      <!-- card 5 -->
        <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
           <img
-            src="https://underarmour.com.ph/cdn/shop/files/s7.6006120-011_DEFAULT.webp?v=1781071942&width=460"
-            alt="Shoes"
-            class="rounded-xl w-full h-48 object-cover" />
+            data-original="https://sportscentral.ph/cdn/shop/files/s7.6006120-100_DEFAULT.webp?v=1783474675&width=1024";
+            onmouseover="hover(this, 'https://sportscentral.ph/cdn/shop/files/s7.6006120-100_TOE.webp?v=1783474675&width=1024')";
+            onmouseout="unhoverMe(this)";
+            src="https://sportscentral.ph/cdn/shop/files/s7.6006120-100_DEFAULT.webp?v=1783474675&width=1024"
+            alt="UA Men Drive Fade 2"
+            class="rounded-xl w-full h-64 object-cover" />
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
           <h2 class="card-title">UA Men Drive Fade 2</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div class="card-actions">
-            <button class="btn btn-primary">
+            <button onclick="decision()" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
         </div>
       </div>
 
+      <!-- card 6 -->
        <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
           <img
+          data-original="https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460";
+          onmouseover="hover(this,'https://sportscentral.ph/cdn/shop/files/s7.6006116-023_TOE.webp?v=1783526033&width=1024')";
+          onmouseout="unhoverMe(this)"
             src="https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460"
-            alt="Shoes"
-            class="rounded-xl w-full h-48 object-cover" />
+            alt="UA Men Drive Pro Clone";
+            class="rounded-xl w-full h-64 object-cover" />
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
           <h2 class="card-title">UA Men Drive Pro Clone</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           <div class="card-actions">
-            <button class="btn btn-primary">
+            <button onclick="decision()" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -234,6 +261,8 @@
 </div>
 </div>
 
+
+
 <!-- HTML Structure -->
 <div>
   <div class="custom-row">
@@ -243,6 +272,10 @@
       <br> <br>Praesent quis viverra diam. Nam tempus viverra tortor, vel molestie metus tristique ac. Fusce nibh sem, egestas et consequat vel, eleifend ut ligula. In posuere purus , sed pharetra libero consectetur non. Maecenas nulla ex, bibendum non est sit amet, rutrum feugiat sem. Pellentesque sagittis rhoncus massa, in ornare nunc sodales ac.
 </p></div>
 </div>
+</div>
+
+<div>
+  
 </div>
 
 </main>
