@@ -9,14 +9,16 @@
 main{
     padding: 0 100px;
 }
-h3{
+.content h3{
     font-size: 36px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px 0 20px 0;
+    font-weight: 600;
+    padding: 0 100px 0 100px ;
 }
-p{
+.content p{
     text-align: center;
+    padding: 0 200px 0 200px;
 }
 .card{
     padding: 40px 0 20px 0; 
@@ -36,6 +38,41 @@ footer{
 footer p{
     color: aliceblue;
     padding: 30px 0 30px 0;
+    text-align: center;
 }
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+     padding: 30px 0 30px 0;
+   
+}
+
+.custom-col {
+    flex: 1 0 0%;
+   
+}
+.custom-col p {
+ padding: 0 20px 0 20px;
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 15px;
+}
+
+.hero{
+    padding: 30px 0 30px 0;
+    
+ 
+    overflow: hidden;
+    
+}
+.hero img {
+    transition: opacity 0.5s ease;
+    width: 1000px;
+    height: 500px;
+    object-fit: fill;
+}
+
+
 
 
