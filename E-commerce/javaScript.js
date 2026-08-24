@@ -9,37 +9,34 @@
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
-    // Add product to cart
-    function addToCart(name, price, image) {
+function addToCart(name, price, image) {
 
-        // Check if product already exists
-        let existingProduct = cart.find(item => item.name === name);
+    let existingProduct =
+        cart.find(item => item.name === name);
 
-        if (existingProduct) {
+    if (existingProduct) {
 
-            // Increase quantity
-            existingProduct.quantity++;
+        existingProduct.quantity++;
 
-        } else {
+    } else {
 
-            // Add new product
-            cart.push({
-                name: name,
-                price: price,
-                image: image,
-                quantity: 1
-            });
-
-        }
-
-         // Save cart
-        localStorage.setItem("cart", JSON.stringify(cart));
-
-        updateCart();
-
-         showCartAlert();
-
+        cart.push({
+            name: name,
+            price: Number(price),
+            image: image,
+            quantity: 1
+        });
     }
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    updateCart();
+
+    showCartAlert();
+}
     // setTimeout
     function showCartAlert() {
 
@@ -109,6 +106,12 @@ function displayCart() {
     // Get latest cart
     cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    // Make sure price and quantity are numbers
+    cart = cart.map(item => ({
+        ...item,
+        price: Number(item.price),
+        quantity: Number(item.quantity)
+    }));
 
     const cartProducts =
         document.getElementById("cart-products");
@@ -118,7 +121,6 @@ function displayCart() {
 
     const cartTotal =
         document.getElementById("cart-total");
-
 
     // Empty cart
     if (cart.length === 0) {
@@ -145,13 +147,10 @@ function displayCart() {
         return;
     }
 
-
     cartProducts.innerHTML = "";
-
 
     let totalQuantity = 0;
     let subtotal = 0;
-
 
     cart.forEach((item, index) => {
 
@@ -159,9 +158,7 @@ function displayCart() {
             item.price * item.quantity;
 
         totalQuantity += item.quantity;
-
         subtotal += itemTotal;
-
 
         cartProducts.innerHTML += `
 
@@ -172,17 +169,11 @@ function displayCart() {
                     <div class="flex flex-col md:flex-row
                                 items-center gap-5">
 
-
-                        <!-- Product Image -->
-
                         <img
                             src="${item.image}"
                             alt="${item.name}"
                             class="w-32 h-32 object-cover rounded-xl"
                         >
-
-
-                        <!-- Product Information -->
 
                         <div class="flex-1 text-center md:text-left">
 
@@ -211,45 +202,85 @@ function displayCart() {
 
                         </div>
 
-
-                        <!-- Remove -->
-
+                        <!-- MINUS -->
                         <button
-                            onclick="removeFromCart(${index})"
+                            onclick="subtractQuantity(${index})"
                             class="btn btn-error btn-sm">
-
-                            Remove
-
+                            -
                         </button>
 
-                         <!-- Checkout -->
-                         <button class="btn btn-primary btn-sm">
+                        <!-- QUANTITY -->
+                        <span class="font-bold text-lg">
+                            ${item.quantity}
+                        </span>
+
+                        <!-- PLUS -->
+                        <button
+                            onclick="addQuantity(${index})"
+                            class="btn btn-secondary btn-sm">
+                            +
+                        </button>
+
+                        <!-- CHECKOUT -->
+                        <button
+                            class="btn btn-primary btn-sm">
                             Checkout
                         </button>
-
 
                     </div>
 
                 </div>
 
             </div>
-
         `;
     });
 
+    // =========================
+    // CART SUMMARY
+    // =========================
 
     totalItems.textContent = totalQuantity;
-
 
     cartTotal.textContent =
         "₱" +
         subtotal.toLocaleString("en-PH", {
-            minimumFractionDigits: 2
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
         });
-
 }
+function addQuantity(index) {
 
-// add remove
+    cart[index].quantity++;
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    displayCart();
+    updateCart();
+}
+function subtractQuantity(index) {
+
+    if (cart[index].quantity > 1) {
+
+        cart[index].quantity--;
+
+    } else {
+
+        // Quantity is 1 → remove product
+        cart.splice(index, 1);
+    }
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    displayCart();
+    updateCart();
+}
+//remove
 function removeFromCart(index) {
 
     cart.splice(index, 1);
