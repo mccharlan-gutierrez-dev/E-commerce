@@ -202,17 +202,14 @@ function displayCart() {
 
                         </div>
 
+                         
+
                         <!-- MINUS -->
                         <button
                             onclick="subtractQuantity(${index})"
                             class="btn btn-error btn-sm">
                             -
                         </button>
-
-                        <!-- QUANTITY -->
-                        <span class="font-bold text-lg">
-                            ${item.quantity}
-                        </span>
 
                         <!-- PLUS -->
                         <button
