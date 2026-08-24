@@ -71,9 +71,11 @@
 
                 <div class="card-actions">
 
-                    <button class="btn btn-primary btn-block">
+                    <a
+                        href="cart.html"
+                        class="btn btn-primary btn-block">
                         View cart
-                    </button>
+                    </a>
 
                 </div>
 
@@ -113,9 +115,7 @@
 <main>
 
  <div class="hero">
-  <!-- <video autoplay muted loop>
-    <source src="video.mp4" type="video/mp4">
-</video> -->
+ 
 <!-- <img src="https://media.gq.com/photos/69209042ab42e11f1fa2ca4e/16:9/w_2560%2Cc_limit/2193320154" alt=""> -->
  <video autoplay muted loop>
     <source src="Curry6.mp4" type="video/mp4">
@@ -151,7 +151,12 @@
           <p>Price: ₱9,995.00 </p>
          
           <div  class="card-actions">
-            <button onclick="addToCart('UA Men Halo Tour SI Golf', 9995.00)" class="btn btn-primary">
+            <button onclick="addToCart(
+                    'UA Men Halo Tour SI Golf',
+                    9995.00,
+                    'https://underarmour.com.ph/cdn/shop/files/s7.6007183-001_DEFAULT.webp?v=1781071296&width=460'
+              )" 
+              class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -177,7 +182,12 @@
           <p>Price: ₱3,957.00</p>
         
           <div class="card-actions">
-            <button onclick="addToCart('UA Unisex Curry Splash', 3957.00)" class="btn btn-primary">
+            <button onclick="addToCart(
+                    'UA Unisex Curry Splash', 
+                    3957.00,
+                    'https://underarmour.com.ph/cdn/shop/files/s7.6006285-001_DEFAULT.webp?v=1781071729&width=460'
+              )" 
+              class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -198,7 +208,11 @@
           <h2 class="card-title">UA Men Phantom X</h2>
           <p>Price: ₱9,995.00</p>
           <div class="card-actions">
-            <button onclick="addToCart('UA Men Phantom X', 9995.00 )" class="btn btn-primary">
+            <button onclick="addToCart(
+                    'UA Men Phantom X', 
+                    9995.00,
+                    'https://sportscentral.ph/cdn/shop/files/s7.6007183-600_DEFAULT.webp?v=1782142327&width=1024'
+             )" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -220,7 +234,11 @@
           <h2 class="card-title">UA Women Phantom X</h2>
           <p>Price: ₱9,995.00</p>
           <div class="card-actions">
-            <button onclick="addToCart('UA Women Phantom X', 9995.00)" class="btn btn-primary">
+            <button onclick="addToCart(
+              'UA Women Phantom X', 
+              9995.00,
+              'https://underarmour.com.ph/cdn/shop/files/s7.6007184-069_DEFAULT.webp?v=1781071488&width=460'
+              )" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -231,9 +249,9 @@
        <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
           <img
-            data-original="https://sportscentral.ph/cdn/shop/files/s7.6006120-100_DEFAULT.webp?v=1783474675&width=1024";
-            onmouseover="hover(this, 'https://sportscentral.ph/cdn/shop/files/s7.6006120-100_TOE.webp?v=1783474675&width=1024')";
-            onmouseout="unhoverMe(this)";
+            data-original="https://sportscentral.ph/cdn/shop/files/s7.6006120-100_DEFAULT.webp?v=1783474675&width=1024"
+            onmouseover="hover(this, 'https://sportscentral.ph/cdn/shop/files/s7.6006120-100_TOE.webp?v=1783474675&width=1024')"
+            onmouseout="unhoverMe(this)"
             src="https://sportscentral.ph/cdn/shop/files/s7.6006120-100_DEFAULT.webp?v=1783474675&width=1024"
             alt="UA Men Drive Fade 2"
             class="rounded-xl w-full h-64 object-cover" />
@@ -242,7 +260,11 @@
           <h2 class="card-title">UA Men Drive Fade 2</h2>
           <p>Price: ₱8,595.00</p>
           <div class="card-actions">
-            <button onclick="addToCart('UA Men Drive Fade 2', 8595.00)" class="btn btn-primary">
+            <button onclick="addToCart(
+              'UA Men Drive Fade 2', 
+              8595.00,
+              'https://sportscentral.ph/cdn/shop/files/s7.6006120-100_DEFAULT.webp?v=1783474675&width=1024'
+              )" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
@@ -253,18 +275,22 @@
        <div class="card bg-base-100 w-full shadow-sm">
         <figure class="px-4 pt-4">
           <img
-          data-original="https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460";
-          onmouseover="hover(this,'https://sportscentral.ph/cdn/shop/files/s7.6006116-023_TOE.webp?v=1783526033&width=1024')";
+          data-original="https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460"
+          onmouseover="hover(this,'https://sportscentral.ph/cdn/shop/files/s7.6006116-023_TOE.webp?v=1783526033&width=1024')"
           onmouseout="unhoverMe(this)"
             src="https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460"
-            alt="UA Men Drive Pro Clone";
+            alt="UA Men Drive Pro Clone"
             class="rounded-xl w-full h-64 object-cover" />
         </figure>
         <div class="card-body p-2 items-center text-center gap-1">
           <h2 class="card-title">UA Men Drive Pro Clone</h2>
           <p>Price: ₱10,295.00</p>
           <div class="card-actions">
-            <button onclick="addToCart('UA Men Drive Pro Clone', 10295.00)" class="btn btn-primary">
+            <button onclick="addToCart(
+              'UA Men Drive Pro Clone', 
+              10295.00,
+              'https://underarmour.com.ph/cdn/shop/files/s7.6006116-023_DEFAULT.webp?v=1781070884&width=460'
+              )" class="btn btn-primary">
                 Add to cart
             </button>
           </div>
