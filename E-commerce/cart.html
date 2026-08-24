@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+       <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="text-xl">Under Armour</a>
+    
+  </div>
+  
+  <!-- cart -->
+   
+   
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-gray-900 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<main class="p-5 max-w-5xl mx-auto">
+
+    <h1 class="text-3xl font-bold mb-6">
+        Shopping Cart
+    </h1>
+
+    <div id="cart-products" class="space-y-4">
+    </div>
+
+
+    
+
+</main>
+    
+</body>
+<script src="javaScript.js"></script>
+</html>
