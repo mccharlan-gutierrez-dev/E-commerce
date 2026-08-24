@@ -355,6 +355,68 @@ footer p{
     }
 }
 
+/* cart */
+.card-body span {
+    color: aliceblue;
+}
+
+/* alert */
+.cart-alert {
+    position: fixed;
+    top: 90px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 20px;
+
+    background: #ffffff;
+    color: #333;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+    font-size: 15px;
+    font-weight: 500;
+
+    z-index: 9999;
+
+    /* Hidden initially */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(120px);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Show alert */
+.cart-alert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+
+/* Check icon */
+.check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+    color: white;
+
+    font-weight: bold;
+}
 
 
 

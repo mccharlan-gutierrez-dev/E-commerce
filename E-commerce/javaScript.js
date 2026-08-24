@@ -1,8 +1,95 @@
-function decision(){
-    let mes = document.querySelector("#message");
-    alert("Add to cart successfully!");
+// function decision(){
+//     let mes = document.querySelector("#message");
+//     alert("Add to cart successfully!");
     
+// }
+
+
+    // Cart array
+    let cart = [];
+
+
+    // Add product to cart
+    function addToCart(name, price) {
+
+        // Check if product already exists
+        let existingProduct = cart.find(item => item.name === name);
+
+        if (existingProduct) {
+
+            // Increase quantity
+            existingProduct.quantity++;
+
+        } else {
+
+            // Add new product
+            cart.push({
+                name: name,
+                price: price,
+                quantity: 1
+            });
+
+        }
+
+        updateCart();
+
+         showCartAlert();
+
+    }
+    // setTimeout
+    function showCartAlert() {
+
+    const alertBox = document.getElementById("cart-alert");
+
+    alertBox.classList.add("show");
+
+    setTimeout(() => {
+        alertBox.classList.remove("show");
+    }, 2000);
+
 }
+
+
+    // Update cart information
+    function updateCart() {
+
+        // Calculate total quantity
+        let totalItems = cart.reduce(
+            (total, item) => total + item.quantity,
+            0
+        );
+
+
+        // Calculate subtotal
+        let subtotal = cart.reduce(
+            (total, item) => total + (item.price * item.quantity),
+            0
+        );
+
+
+        // Update item count
+        document.getElementById("cart-count").textContent =
+            totalItems;
+
+
+        // Update "X Items"
+        document.getElementById("cart-items").textContent =
+            totalItems + (totalItems === 1 ? " Item" : " Items");
+
+
+        // Update subtotal
+        document.getElementById("cart-subtotal").textContent =
+            "Subtotal: ₱" + subtotal.toLocaleString("en-PH", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+
+    }
+
+
+
+
+
 function hover() {
     let image = document.querySelector(".hero img");
 
